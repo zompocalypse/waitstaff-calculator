@@ -13,23 +13,23 @@ function renderHTML(){
   let num = store.meals[store.mealNumber];
   return (
     `
-    <div class = 'all'>
+    <div class = 'main'>
       <form class = 'meal-details row'>
         <div>
           <h2>Enter the Meal Details</h2>
           <div class = 'item'>
             <label for="meal-price">Base Meal Price: $</label>
-            <input type="text" name="meal-price" id="meal-price" class = 'price'>
+            <input type="text" name="meal-price" id="meal-price" class='price'>
           </div>
           <div class = 'item'>  
             <label for="tax-rate">Tax Rate: %</label>
-            <input type="text" name='tax-rate' id='tax-rate' class = 'rate'>
+            <input type="text" name='tax-rate' id='tax-rate' class='rate'>
           </div>
           <div class = 'item'>
             <label for="tip-percent">Tip Percentage: %</label>
-            <input type="text" name='tip-percent' id='tip-percent' class = 'percent'>
+            <input type="text" name='tip-percent' id='tip-percent' class='percent'>
           </div>
-          <div class = 'item'>
+          <div class = 'details-buttons'>
             <button type= 'submit' class = 'calc'>Submit</button>
             <button class= 'cancel'>Cancel</button>
           </div>
